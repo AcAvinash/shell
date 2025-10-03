@@ -16,10 +16,10 @@ fi
 
 Validate(){
     if [ $? -ne 0 ]; then
-        echo -e "${Red} $2 is failed ${Reset}" &>> $LOGFILE    
+        echo -e "${Red} $2 is failed ${Reset}" 
         exit 1
     else
-        echo -e "${Green} $2 is successful ${Reset}" &>> $LOGFILE
+        echo -e "${Green} $2 is successful ${Reset}" 
     fi
 }
 
