@@ -1,5 +1,5 @@
 
-PERSON=["RAMESH" "SURESH" 30 "MAYANK"]
+PERSON=("RAMESH" "SURESH" 30 "MAYANK")
 echo ${PERSON[0]}
 echo ${PERSON[1]}
 echo ${PERSON[2]}
