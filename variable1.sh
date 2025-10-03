@@ -1,5 +1,6 @@
 
 #!/bin/bash
+# for single word no need to add "" but name like this avinash kumar need to add ""
 PERSON1="Ramesh"
 PERSON2="Suresh"
 echo "$PERSON1: Hi $PERSON2, Good Morning!"
