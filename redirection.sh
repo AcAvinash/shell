@@ -6,7 +6,7 @@ Reset="\033[0m"
 
 DATE=$(date +"%Y-%m-%d %H:%M:%S")
 SCRIPT_NAME=$0
-LOGFILE=/tmp/$SCRIPT_NAME_$DATE.log
+LOGFILE="/tmp/${SCRIPT_NAME}_${DATE}.log"
 
 USERID=$(id -u)
 if [ $USERID -ne 0 ]; then
