@@ -14,11 +14,11 @@ LOGSDIR=/home/ec2-user/shellscript_logs
 LOGFILE="${LOGSDIR}/${SCRIPT_NAME}_${DATE}.log"
 FILE_TO_DELETE=$(find $APP_LOGS_DIR -type f -name "*.log" -mtime +7)
 
-USERID=$(id -u)
-if [ $USERID -ne 0 ]; then
-    echo -e "${R}You must be root to run this script.${N}"
-    exit 1
-fi  
+# USERID=$(id -u)
+# if [ $USERID -ne 0 ]; then
+#     echo -e "${R}You must be root to run this script.${N}"
+#     exit 1
+# fi  
 
 while read line; do
     if [ -f "$line" ]; then
