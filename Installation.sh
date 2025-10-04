@@ -37,6 +37,6 @@ do
         yum install $i -y &>> $LOGFILE
         Validate $? "$i installation"
     else
-        echo -e "${G}$i is already installed${N}"
+        echo -e "${Y}$i is already installed${N}"
     fi
 done
